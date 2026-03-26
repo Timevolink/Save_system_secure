@@ -3,7 +3,7 @@ class Cryptage:
         self.data = data
         self.key = "Super_personne"
 
-    def encrypte(self):
+    def encrypt(self):
         result = ""
         for i in range(len(self.data)):
             k = self.key[i % len(self.key)]
