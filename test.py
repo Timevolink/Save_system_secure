@@ -1,6 +1,6 @@
 from Save import *
+from Load import *
 
 my_data = "level:1;niveau:1"
-data = Save(my_data)
-data.save()
-print(data.load())
+recuperation = Load("save.dat")
+recuperation.test_if_modified()
