@@ -1,6 +1,6 @@
 class Decryptage:
-    def __init__(self):
-        self.key = "Super_personne"
+    def __init__(self, key):
+        self.key = key
 
     def decrypt(self, data):
         result = ""

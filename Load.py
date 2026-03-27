@@ -3,12 +3,13 @@ from Decryptage import *
 import os
 
 class Load:
-    def __init__(self, file = "save1.dat"):
+    def __init__(self, file = "save1.dat" , key = "Super_personne"):
         self.file = file
+        self.key = key
 
     def load(self):
         text_crypted = open(self.file, "r").read()
-        text_decrypted = Decryptage().decrypt(text_crypted)
+        text_decrypted = Decryptage(self.key).decrypt(text_crypted)
         return text_decrypted
 
     def test_if_modified(self):

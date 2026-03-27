@@ -1,7 +1,7 @@
 class Cryptage:
-    def __init__(self, data):
+    def __init__(self, data, key):
         self.data = data
-        self.key = "Super_personne"
+        self.key = key
 
     def encrypt(self):
         result = ""
